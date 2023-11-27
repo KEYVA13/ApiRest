@@ -8,10 +8,9 @@
 
     $router->addRoute('planes',         'GET',   'PlanesApiController',     'get'); //b
     $router->addRoute('planes/:ID',     'GET',   'PlanesApiController',     'get'); //b
-    $router->addRoute('planesXpaginadoYorden',     'GET',   'PlanesApiController',     'getPaginadoYOrdenado'); //b
     $router->addRoute('planes/:ID',     'DELETE','PlanesApiController',     'deletePlan'); //b
     $router->addRoute('planes',         'POST',  'PlanesApiController',     'addPlan'); //b
     $router->addRoute('planes/:ID',     'PUT',   'PlanesApiController',     'editPlan'); //b
-    $router->addRoute('planesFiltro',   'GET',   'PlanesApiController',     'FiltrarPlanes');//b
+    $router->addRoute('planesFiltro',   'GET',   'PlanesApiController',     'FiltrarPlanes');//b ?
 
     $router->route($_GET['resource'], $_SERVER['REQUEST_METHOD']);
